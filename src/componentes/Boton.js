@@ -2,32 +2,37 @@ import React from 'react';
 import {Text, TouchableOpacity} from 'react-native';
 
 const Boton = (props) =>{
+    const {estiloTexto, estiloBoton} = styles;
+
     return (
-        <TouchableOpacity onPress={props.botonPresionado}>
-                <Text>Informacion de la raza</Text>
+        <TouchableOpacity style={estiloBoton} onPress={props.botonPresionado}>
+                <Text style={estiloTexto} >Mas Informacion</Text>
         </TouchableOpacity>
     );
 };
 
-/*
+
 const styles={
     estiloTexto:{
-        fontSize: 16,
+        fontSize: 18,
         fontWeight: '400',
         paddingBottom: 3,
-        color: '#008080'
+        color: 'white'
     },
     estiloBoton:{
-        alignSelf: 'stretch',
-        backgroundColor: '#D5D8DB',
+        alignSelf: 'center',
+        backgroundColor: '#3e4444',
         alignItems: 'center',
         borderWidth: .5,
         paddingTop: 2,
         marginTop:10,
         marginLeft:7,
         marginRight: 7,
-        marginBotton:15
+        marginBotton:15,
+        paddingLeft:15,
+        paddingRight: 15,
+        borderRadius: 10
     }
 }
-*/
+
 export default Boton;

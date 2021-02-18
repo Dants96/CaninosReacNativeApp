@@ -8,15 +8,16 @@ const BoxInfo = (props) => {
     return(
         <Item>
             <ItemSeccion>
-                <View>
-                    <Text>
-                        <Text>{props.mascota.raza}</Text>
-                        <Text>{props.mascota.nombre}</Text>
-                    </Text>
-                </View>
-            </ItemSeccion>
+                <Text style={styles.textBold, styles.estiloTitulo}>Mascota No {props.mascota.id}</Text>
+            </ItemSeccion>            
             <ItemSeccion>
                     <Image style={styles.estiloImagen} source={{uri: props.mascota.imagen}} />
+            </ItemSeccion>
+            <ItemSeccion>
+                <View style={styles.estiloDesc}>
+                        <Text style={styles.estiloTextoDesc}><Text style={styles.textBold}>Raza: </Text>{props.mascota.raza}</Text>
+                        <Text style={styles.estiloTextoDesc}><Text style={styles.textBold}>Nombre: </Text>{props.mascota.nombre}</Text>
+                </View>
             </ItemSeccion>
             <ItemSeccion>
                 <Boton botonPresionado={() => {Linking.openURL(props.mascota.información)}} />
@@ -26,10 +27,32 @@ const BoxInfo = (props) => {
 };
 
 const styles = {
+    estiloTitulo:{
+        alignSelf: "center",
+        fontSize: 25
+    },
     estiloImagen:{
+        alignSelf: "center",
         height: 300,
-        width: 300
+        width: 300,
+        margin:10,
+    },
+    estiloDesc:{
+        alignSelf: 'flex-start',
+        margin: 10,
+        marginLeft: 30,
+    },
+    estiloTextoDesc:{
+        fontSize:20
+    },
+    estiloBoton:{
+        alignSelf: "center"
+    },
+    textBold:{
+        fontWeight: "bold",
     }
+
+    
 };
 
 export default BoxInfo;

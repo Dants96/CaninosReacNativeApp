@@ -3,12 +3,10 @@ import {View, Text, ScrollView} from 'react-native';
 import axios from 'axios';
 import BoxInfo from './BoxInfo';
 
+
 class ListaMascotas extends Component{
     state = {listaMascotas:[]};
-
-    //url = "https://givecars.herokuapp.com/"; //autos
-    //url = "https://pokeapi.co/api/v2/pokemon/4"; //pokemon
-    //url = "http://localhost:8080/ApiRestMascotas/webresources/mascotas";
+    
     url = "http://192.168.0.17:3000/mascotas";//json-server
     
     // esta funcion se ejecutara al instanciar el objeto
@@ -32,9 +30,17 @@ class ListaMascotas extends Component{
 
     render(){
         //console.log(this.state);
-        return <ScrollView>{this.MostrarLista()}</ScrollView>;
+        return <ScrollView style={styles.scrolStyle}>{this.MostrarLista()}</ScrollView>;
     }
 
+}
+
+const styles ={
+    scrolStyle:{
+        width: "100%",
+        paddingLeft: 20,
+        paddingRight: 20,
+    }
 }
 
 

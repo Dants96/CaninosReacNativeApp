@@ -5,13 +5,11 @@ const ItemSeccion = (props) =>{
     return <View>{props.children}</View>
 };
 
-/*
+
 const styles={
     estiloContenedor:{
-        flexDirection:"column",
-        borderWidth:.5,
-        borderColor: "#686868"
+        flexDirection:"column"
     }
 };
-*/
+
 export default ItemSeccion;
