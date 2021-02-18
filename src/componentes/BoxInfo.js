@@ -20,7 +20,10 @@ const BoxInfo = (props) => {
                 </View>
             </ItemSeccion>
             <ItemSeccion>
-                <Boton botonPresionado={() => {Linking.openURL(props.mascota.información)}} />
+                <Boton botonPresionado={() => {Linking.openURL(props.mascota.información)}}>Mas Información</Boton>
+            </ItemSeccion>
+            <ItemSeccion>
+                <Boton botonPresionado={() => {console.log("adoptaron a " + props.mascota.nombre)}}>Adoptar</Boton>
             </ItemSeccion>
         </Item>
     );

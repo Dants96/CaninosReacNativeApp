@@ -6,7 +6,7 @@ const Boton = (props) =>{
 
     return (
         <TouchableOpacity style={estiloBoton} onPress={props.botonPresionado}>
-                <Text style={estiloTexto} >Mas Informacion</Text>
+                <Text style={estiloTexto} >{props.children}</Text>
         </TouchableOpacity>
     );
 };
