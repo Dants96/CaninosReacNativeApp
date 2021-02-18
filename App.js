@@ -1,11 +1,17 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, ImageBackground, View, ScrollView} from 'react-native';
+// Vista principa de la aplicacion.
 
+//Componente para que la aplicacion este de fondo en la barra de notificaciones.
+import { StatusBar } from 'expo-status-bar';  
+import React from 'react';
+import { StyleSheet, ImageBackground, View} from 'react-native';
+
+// Componente Header de la aplicacion.
 import Cabezera from './src/componentes/Cabezera';
+// Componenete que lista las mascotas
 import ListaMascotas from './src/componentes/ListaMascotas';
 
 
+// Vista principal
 export default function App() {
   return (
     <View style={styles.container}>
@@ -18,6 +24,7 @@ export default function App() {
   );
 }
 
+// Imagen de fondo de la vista principal
 const imagen = require("./src/images/fondo2.jpg");
 
 const styles = StyleSheet.create({

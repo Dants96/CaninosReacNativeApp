@@ -1,5 +1,12 @@
+// Componente Header de la aplicacion
 import React from 'react';
 import {View, Text} from 'react-native';
+
+
+/**
+ * Retrna un componente de texto con un estilo espesifico
+ * @param {} titulo Texto que se mostrara en la cabezera.
+ */
 
 const Cabezera = (props) => {
     const {estiloTexto, estiloContenedor} = styles;

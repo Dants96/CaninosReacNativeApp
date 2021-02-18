@@ -1,9 +1,15 @@
 import React from 'react';
 import { View, Text, Image, Linking } from 'react-native';
-import Item from './Item';
+
+import Item from './Item'; 
 import ItemSeccion from './ItemSeccion';
 import Boton from './Boton';
 
+/**
+ * extrae y secciona para mostrada toda la infomrmacion de una mascota de porps, para ser mostrada.
+ * @param {*} props datos de una mascota siguiendo el modelo de la tabla mascotas.
+ * @return {Item} Componente Item con todos los datos de una mascota.
+ */
 const BoxInfo = (props) => {
     return(
         <Item>

@@ -1,6 +1,11 @@
 import React from 'react';
 import {Text, TouchableOpacity} from 'react-native';
 
+/**
+ * Componente que muestra un boton general con una funcion onPress cualquiera.
+ * @param {Function} props.botonPresionado funcion que realizara la aplicacion al precionar este componente.
+ * @return {TouchableOpacity} TouchableOpacity con texto y estilo de Boton
+ */
 const Boton = (props) =>{
     const {estiloTexto, estiloBoton} = styles;
 
