@@ -1,3 +1,6 @@
+/**
+ * @author Daniel Alejandro Tutistar
+ */
 import { registerRootComponent } from 'expo';
 
 import App from './App';

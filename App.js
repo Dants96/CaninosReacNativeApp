@@ -1,5 +1,8 @@
-// Vista principa de la aplicacion.
+/**
+ * @author Daniel Alejandro Tutistar
+ */
 
+// Vista principa de la aplicacion.
 //Componente para que la aplicacion este de fondo en la barra de notificaciones.
 import { StatusBar } from 'expo-status-bar';  
 import React from 'react';
